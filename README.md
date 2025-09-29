@@ -1,14 +1,14 @@
 # CANTILEVER-Fraud
 
-## 📌 Project Overview
+Project Overview
 CANTILEVER-Fraud is a machine learning project focused on **credit card fraud detection**.  
 The dataset is highly imbalanced (fraudulent transactions are less than 0.2% of all data).  
 The project explores different techniques such as **Logistic Regression**, **Random Forest**,  
 and strategies like **class weighting** and **SMOTE** to handle imbalance.
 
----
 
-## 📂 Project Structure
+
+Project Structure
 CANTILEVER-Fraud/
 │
 ├── data/ # Raw dataset (creditcard.csv from Kaggle)
@@ -16,7 +16,7 @@ CANTILEVER-Fraud/
 ├── notebooks/ # Jupyter notebooks
 │ ├── fraud_eda.ipynb
 │ ├── fraud_baseline.ipynb
-│ └── fraud_final.ipynb
+│ 
 │
 ├── models/
 │ └── sklearn/
@@ -28,14 +28,10 @@ CANTILEVER-Fraud/
 ├── requirements.txt
 └── README.md
 
-yaml
-Copy code
 
----
-
-## ⚙️ Setup & Installation
+#Setup & Installation
 ```bash
-# Clone repository
+#Clone repository
 git clone git@github.com:benjakariti/CANTILEVER-Fraud.git
 cd CANTILEVER-Fraud
 
@@ -46,13 +42,13 @@ venv\Scripts\activate      # On Windows
 
 # Install dependencies
 pip install -r requirements.txt
-🚀 Usage
+
+Usage
 Run inference on new data:
 
-bash
-Copy code
 python src/fraud_predict.py --input data/sample.csv
-📊 Models
+
+Models
 Logistic Regression (with class weighting)
 
 Random Forest (with class weighting / SMOTE)
